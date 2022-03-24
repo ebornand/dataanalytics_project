@@ -3,7 +3,7 @@
     "path": "D:/Uni Basel/Github Repo/dataanalytics_project_ebornand/Test.Rmd",
     "project_path": "Test.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "248086232",
     "contents": "",
     "dirty": false,
     "created": 1648129075010.0,
@@ -11,7 +11,9 @@
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "13,3",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1647613814,
