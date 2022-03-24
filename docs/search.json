@@ -5,16 +5,24 @@
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-03-18T15:11:12+01:00"
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-03-24T14:44:35+01:00"
     },
     {
       "path": "index.html",
       "title": "My Website",
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-03-18T15:11:13+01:00"
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-03-24T14:44:35+01:00"
+    },
+    {
+      "path": "Test.html",
+      "title": "My Website",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-03-24T14:44:35+01:00"
     }
   ],
   "collections": []
