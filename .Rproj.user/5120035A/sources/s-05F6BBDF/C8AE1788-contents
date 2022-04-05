@@ -19,7 +19,7 @@ timeseries <- c()
 for (i in data_json$objects) {
   date <- append(date, as.Date(i$date))
   frequency <- append(frequency, i$frequency)
-  happiness <- append(happiness, as.double(i$happiness))
+  happiness <- append(happiness, i$happiness)
   timeseries <- append(timeseries, i$timeseries)
 }
 

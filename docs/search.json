@@ -6,23 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-03-24T14:44:35+01:00"
+      "last_modified": "2022-04-05T18:31:39+02:00"
     },
     {
       "path": "index.html",
-      "title": "My Website",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "Data Analytics Project",
+      "description": "Elea Bornand & Roman Alt\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-03-24T14:44:35+01:00"
-    },
-    {
-      "path": "Test.html",
-      "title": "My Website",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-03-24T14:44:35+01:00"
+      "contents": "\r\nIntroduction\r\nsome introductory stuff here :)\r\nData\r\nsome Infos about our Data, where we got it from and how it is built. (different languages etc.)\r\nMethod\r\nhow are we going to use that data. what variables are important, do we have a model to fit to the data etc.\r\nResults\r\nAt the moment we can show the development of happiness over time for three language-groups on Twitter, namely German, English and Russian.\r\n\r\n\r\n\r\nDevelopment of Happiness over Time for german Twitter:\r\n\r\n\r\n\r\nDevelopment of Happiness over Time for english Twitter:\r\n\r\n\r\n\r\nDevelopment of Happiness over Time for russian Twitter:\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-04-05T18:31:40+02:00"
     }
   ],
   "collections": []

@@ -3,7 +3,7 @@
     "path": "D:/Uni Basel/Github Repo/dataanalytics_project_ebornand/_site.yml",
     "project_path": "_site.yml",
     "type": "yaml",
-    "hash": "2996769887",
+    "hash": "2325104938",
     "contents": "",
     "dirty": false,
     "created": 1647614094061.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,32",
+        "cursorPosition": "3,24",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1648129019,
+    "lastKnownWriteTime": 1649172678,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1648129019073,
+    "last_content_update": 1649172678587,
     "read_only": false,
     "read_only_alternatives": []
 }

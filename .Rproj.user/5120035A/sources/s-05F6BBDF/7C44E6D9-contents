@@ -23,7 +23,7 @@ some Infos about our Data, where we got it from and how it is built. (different 
 how are we going to use that data. what variables are important, do we have a model to fit to the data etc.
 
 # Results
-At the moment we can show the development of happiness over time for three language-groups on Twitter, namely German, English and Russian.
+atm just a display of the data we manipulated
 
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
@@ -46,7 +46,7 @@ timeseries <- c()
 for (i in de_json$objects) {
   date <- append(date, as.Date(i$date))
   frequency <- append(frequency, i$frequency)
-  happiness <- append(happiness, as.double(i$happiness))
+  happiness <- append(happiness, i$happiness)
   timeseries <- append(timeseries, i$timeseries)
 }
 #creating the english language data frame
@@ -60,11 +60,11 @@ timeseries <- c()
 for (i in en_json$objects) {
   date <- append(date, as.Date(i$date))
   frequency <- append(frequency, i$frequency)
-  happiness <- append(happiness, as.double(i$happiness))
+  happiness <- append(happiness, i$happiness)
   timeseries <- append(timeseries, i$timeseries)
 }
 #creating the german language data frame
-data_en <- data.frame(date = date, frequency = frequency, happiness = happiness, timeseries = timeseries)
+data_de <- data.frame(date = date, frequency = frequency, happiness = happiness, timeseries = timeseries)
 
 date <- c()
 frequency <- c()
@@ -74,51 +74,22 @@ timeseries <- c()
 for (i in ru_json$objects) {
   date <- append(date, as.Date(i$date))
   frequency <- append(frequency, i$frequency)
-  happiness <- append(happiness, as.double(i$happiness))
+  happiness <- append(happiness, i$happiness)
   timeseries <- append(timeseries, i$timeseries)
 }
 #creating the russian language data frame
 data_ru <- data.frame(date = date, frequency = frequency, happiness = happiness, timeseries = timeseries)
 
-#creating a plot for the german language
-plot_de <- ggplot(data_de, aes(x = date, y = happiness, group = 1)) +
-  geom_line() +
-  geom_point() +
-  geom_smooth() +
-  theme_light()
-
-#creating a plot for the english language
-plot_en <- ggplot(data_en, aes(x = date, y = happiness, group = 1)) +
-  geom_line() +
-  geom_point() +
-  geom_smooth() +
-  theme_light()
-
-#creating a plot for the english language
-plot_ru <- ggplot(data_ru, aes(x = date, y = happiness, group = 1)) +
+plot1 <- ggplot(data, aes(x = date, y = happiness, group = 1)) +
   geom_line() +
   geom_point() +
   geom_smooth() +
   theme_light()
 ```
 
-### Development of Happiness over Time for german Twitter:
+here are some graphs:
 
 ```{r}
-plot_de
-
-```
-
-### Development of Happiness over Time for english Twitter:
-
-```{r}
-plot_en
-
-```
-
-### Development of Happiness over Time for russian Twitter:
-
-```{r}
-plot_ru
+plot1
 
 ```

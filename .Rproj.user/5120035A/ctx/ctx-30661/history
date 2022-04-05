@@ -1,0 +1,115 @@
+library(rmarkdown)
+install.packages("rmarkdown")
+install.packages("rmarkdown")
+install.packages("rmarkdown")
+library(rmarkdown)
+render_site()
+install.packages(distill)
+install.packages("distill")
+install.packages("distill")
+install.packages("distill")
+install.packages("distill")
+install.packages("distill")
+install.packages("distill")
+install.packages("rjson")
+data <- fromJSON("assets/hedonometer.json")
+library(rjson)
+data <- fromJSON(file = "assets/hedonometer.json")
+data
+data$happiness
+summary(data)
+data <- as.data.frame(data)
+data_frame <- as.data.frame(data)
+?as.data.frame
+data_frame <- as.data.frame(x = data, row.names = c("date", "frequency", "happiness", "timeseries"))
+data_frame <- as.data.frame(x = data, row.names = c("id", date", "frequency", "happiness", "timeseries"))
+data_frame <- as.data.frame(x = data, row.names = c("id", "date", "frequency", "happiness", "timeseries"))
+data_frame <- as.data.frame(data, optional = T)
+data_frame <- as.data.frame(x = data, col.names = c("id", "date", "frequency", "happiness", "timeseries"))
+data_frame <- as.data.frame(x = data, col.names = c("date", "frequency", "happiness", "timeseries"))
+data_frame <- as.data.frame(x = data, col.names = c("happiness", "timeseries"))
+install.packages("rjson")
+library("rjson")
+data_json <- fromJSON(file = "data/hedonometer.json")
+library("rjson")
+data_json <- fromJSON(file = "data/hedonometer.json")
+date <- c()
+frequency <- c()
+happiness <- c()
+timeseries <- c()
+a_day <- c(date, frequency, happiness, timeseries)
+for(i in data_json$objects) {
+# we need to loop through every parameter of a day and save it into a neat dataframe
+i
+}
+data_json$objects
+for (i in data_json$objects) {
+# we need to loop through every parameter of a day and save it into a neat dataframe
+i
+}
+for (i in data_json$objects) {
+# we need to loop through every parameter of a day and save it into a neat dataframe
+print(i)
+}
+for (i in data_json$objects) {
+# we need to loop through every parameter of a day and save it into a neat dataframe
+date <- append(i$date)
+frequency <- append(i$frequency)
+happiness <- append(i$happiness)
+timeseries <- append(i$timeseries)
+}
+?append
+for (i in data_json$objects) {
+# we need to loop through every parameter of a day and save it into a neat dataframe
+date <- append(date, i$date)
+frequency <- append(frequency, i$frequency)
+happiness <- append(happiness, i$happiness)
+timeseries <- append(timeseries, i$timeseries)
+}
+data <- data.frame(day_date = date, day_frequency = frequency, day_happiness = happiness, day_timeseries = timeseries)
+data
+data <- data.frame(date = date, frequency = frequency, happiness = happiness, timeseries = timeseries)
+data
+View(data)
+?fromJSON
+library("rjson")
+?fromJSON
+install.packages("ggplot2")
+install.packages("ggplot2")
+library("ggplot2")
+knitr::opts_chunk$set(echo = FALSE)
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+library("rjson")
+library("ggplot2")
+data_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=en_all&date__gte=2022-02-23&limit=1000")
+date <- c()
+frequency <- c()
+happiness <- c()
+timeseries <- c()
+# we loop through each element in data_json$objects and sort the parameters into their respective vector
+for (i in data_json$objects) {
+date <- append(date, i$date)
+frequency <- append(frequency, i$frequency)
+happiness <- append(happiness, i$happiness)
+timeseries <- append(timeseries, i$timeseries)
+}
+data <- data.frame(date = date, frequency = frequency, happiness = happiness, timeseries = timeseries)
+ggplot(data, aes(data$happiness, data$date)) +
+geom_line() +
+geom_point()
+ggplot(data, aes(date, happiness)) +
+geom_line() +
+geom_point()
+plot1 <- ggplot(data, aes(date, happiness)) +
+geom_line() +
+geom_point()
+plot1
+plot1 <- ggplot(data, aes(date, happiness)) +
+geom_line() +
+geom_point() +
+theme_classic()
+plot1
+library("rmarkdown")
+render_site
+render_site()
