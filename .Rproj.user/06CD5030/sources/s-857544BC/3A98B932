@@ -3,7 +3,7 @@
     "path": "C:/Git/robo1993/dataanalytics_project/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2510493783",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1649315302407.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "178,44",
-        "scrollLine": "170",
-        "last_setup_crc32": "CF9BF6057c0f619b"
+        "cursorPosition": "22,11",
+        "scrollLine": "19",
+        "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1649317361,
+    "lastKnownWriteTime": 1649319543,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649317361058,
+    "last_content_update": 1649319543362,
     "read_only": false,
     "read_only_alternatives": []
 }
