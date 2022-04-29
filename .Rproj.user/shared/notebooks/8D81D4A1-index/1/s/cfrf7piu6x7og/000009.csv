@@ -1,0 +1,6 @@
+"0","#creating a plot for the german language
+plot_de <- function.basic_plott(data_de_habit)
+"
+"2","Error in function.basic_plott(data_de_habit) : 
+  could not find function ""function.basic_plott""
+"

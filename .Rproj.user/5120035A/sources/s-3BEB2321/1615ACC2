@@ -3,7 +3,7 @@
     "path": "D:/Uni Basel/Github Repo/dataanalytics_project_ebornand/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2688586116",
+    "hash": "2629157207",
     "contents": "",
     "dirty": false,
     "created": 1649175550159.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "47,0",
-        "scrollLine": "14",
+        "cursorPosition": "20,102",
+        "scrollLine": "5",
         "last_setup_crc32": "3BEB23217c0f619b"
     },
     "folds": "",
-    "lastKnownWriteTime": 1651223897,
+    "lastKnownWriteTime": 1651224615,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1651223908500,
+    "last_content_update": 1651224615743,
     "read_only": false,
     "read_only_alternatives": []
 }
