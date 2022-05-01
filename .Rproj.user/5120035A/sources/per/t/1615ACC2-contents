@@ -1,0 +1,52 @@
+---
+title: "Data Analytics Project"
+description: |
+  Elea Bornand & Roman Alt
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+```{r results="asis"}
+cat(readLines('text/home.txt'), sep = '\n')
+```
+
+# Results
+At the moment we can show the development of happiness aswell as a Baseline Graph before the 24.2.2022 for German Twitter
+
+```{r echo=FALSE, eval=FALSE}
+install.packages("rjson")
+install.packages("ggplot2")
+library("rjson")
+library("ggplot2")
+source("code/JSON_handler.R")
+source("code/plotter.R")
+
+de_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+de_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=en_all&date__gte=2022-01-24&limit=31")
+
+data_de_habit <- function.createHedonDataFrame(de_habit_json)
+data_de_base <- function.createHedonDataFrame(de_base_json)
+
+#creating a plot for the german language
+plot_de_habit <- function.basic_plot(data_de_habit)
+plot_de_base <- function.basic_plot(data_de_base)
+```
+
+### Development of Happiness since 24.2.2022 for German Twitter:
+
+```{r}
+plot_de_habit
+
+```
+### Baseline of Happiness for 1 month before 24.2.2022 for German Twitter:
+
+```{r}
+plot_de_base
+
