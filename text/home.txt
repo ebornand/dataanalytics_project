@@ -11,7 +11,7 @@ The hedonometer computes the weighted average happiness of texts through the fol
 <li>wi: word in the text</li>
 <li>fi: frequency of word</li>
 <li>N: number of unique words</li>
-<li>havg: average happiness</li>
+<li>h<sub>avg</sub>: average happiness</li>
 <li>havg(T): average happiness of the whole text</li>
 <li>havg(wi): average happiness of a word</li>
 <li>pi: normalized frequency</li>
