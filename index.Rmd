@@ -23,8 +23,10 @@ At the moment we can show the development of happiness aswell as a Baseline Grap
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
 install.packages("ggplot2")
+install.packages("lemon")
 library("rjson")
-library("ggplot2")
+library("lemon")
+knit_print.data.frame <- lemon_print
 source("code/JSON_handler.R")
 source("code/plotter.R")
 
@@ -34,11 +36,15 @@ de_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format
 data_de_habit <- function.createHedonDataFrame(de_habit_json)
 data_de_base <- function.createHedonDataFrame(de_base_json)
 
+
 #creating a plot for the german language
 plot_de_habit <- function.basic_plot(data_de_habit)
 plot_de_base <- function.basic_plot(data_de_base)
 ```
+```{r render=lemon_print}
+hedonometer_data
 
+```
 ### Development of Happiness since 24.2.2022 for German Twitter:
 
 ```{r}
