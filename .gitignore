@@ -48,3 +48,6 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 .Rhistory
+.Rhistory
+.RData
+.Rhistory

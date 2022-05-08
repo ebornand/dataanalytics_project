@@ -32,4 +32,4 @@ for (d in data_hedon_total) {
   data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
 }
 
-hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+hedonometer_data <- data.frame(language = data_language, baseline_mean = data_baseline_mean, baseline_sd = data_baseline_sd, reactivity = data_reactivity, habituation = data_habituation)

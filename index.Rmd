@@ -19,6 +19,7 @@ cat(readLines('text/home.txt'), sep = '\n')
 
 # Results
 At the moment we can show the development of happiness aswell as a Baseline Graph before the 24.2.2022 for German Twitter
+Also we already have the processed Data from hedonometer.org, aswell as Language, Capital and Iso2 code for all relevant countries.
 
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
@@ -41,10 +42,17 @@ data_de_base <- function.createHedonDataFrame(de_base_json)
 plot_de_habit <- function.basic_plot(data_de_habit)
 plot_de_base <- function.basic_plot(data_de_base)
 ```
+#### Hedonometer Data
 ```{r render=lemon_print}
 hedonometer_data
 
 ```
+#### Countries Data
+```{r render=lemon_print}
+head(countries_capitals_and_more, 6)
+
+```
+
 ### Development of Happiness since 24.2.2022 for German Twitter:
 
 ```{r}
