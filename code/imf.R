@@ -33,6 +33,7 @@ colnames(tb_ukr) <- c("frequency", "ref_area", "indicator", "counterpart_area", 
 trade_datalist <- list()
 
 for (i in 1:nrow(countries_capitals_and_more)) {
+  print(i)
   country <- data.frame(language = countries_capitals_and_more[i, "language"], 
                         country = countries_capitals_and_more[i, "country"], 
                         iso2 = countries_capitals_and_more[i, "iso2"], 
@@ -41,14 +42,15 @@ for (i in 1:nrow(countries_capitals_and_more)) {
   exports_ukr_x <- filter(exports_ukr, counterpart_area == country$iso2 & frequency == "A")
   imports_ukr_x <- filter(imports_ukr, counterpart_area == country$iso2 & frequency == "A")
   tb_ukr_x <- filter(tb_ukr, counterpart_area == country$iso2 & frequency == "A")
-  if(!is.null(exports_ukr_x) && !is.null(imports_ukr_x) && !is.null(tb_ukr_x)) {
-    print(exports_ukr_x$obj[2][nrow(exports_ukr_x$obs[[1]])])
-    trade_datalist[length(trade_datalist)+1] <- data.frame(language = country$language, 
-                                                           country = country$country, 
-                                                           capital = country$capital, 
-                                                           exports = exports_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])], 
-                                                           imports = imports_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])],
-                                                           balance = tb_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
+  print(exports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
+  if(dim(exports_ukr_x)[1] != 0 && dim(imports_ukr_x)[1] != 0 && dim(tb_ukr_x)[1] != 0) {
+    test_stuff_oof <- data.frame(language = country$language, 
+                                 country = country$country, 
+                                 capital = country$capital, 
+                                 exports = exports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])], 
+                                 imports = imports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])],
+                                 balance = tb_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
+    trade_datalist[length(trade_datalist)+1] <- test_stuff_oof
   }
 }
 
