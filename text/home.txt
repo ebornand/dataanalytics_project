@@ -106,9 +106,9 @@ Before Dirk and Rui pointed out in a meeting that there basically is an API to a
 
 ### More information:
 <ul>
-<li>On the hedonometer in general: https://hedonometer.org/timeseries/en_all/?from=2020-10-06&to=2022-04-05</li>
-<li>On the wordlists used for the hedonometer (e.g., German): https://hedonometer.org/words/labMT-de-v2/</li>
-<li>On the hedonometer’s data: https://hedonometer.org/api.html</li>
+<li>On the Hedonometer in general: https://hedonometer.org/timeseries/en_all/?from=2020-10-06&to=2022-04-05</li>
+<li>On the wordlists used for the Hedonometer (e.g., English): https://hedonometer.org/words/labMT-en-v2/</li>
+<li>On the Hedonometer data: https://hedonometer.org/api.html</li>
 </ul>
  
 ### References
