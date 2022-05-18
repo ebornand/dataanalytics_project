@@ -30,5 +30,26 @@ colnames(exports_ukr) <- c("frequency", "ref_area", "indicator", "counterpart_ar
 colnames(imports_ukr) <- c("frequency", "ref_area", "indicator", "counterpart_area", "unit_mult", "time_format", "obs")
 colnames(tb_ukr) <- c("frequency", "ref_area", "indicator", "counterpart_area", "unit_mult", "time_format", "obs")
 
-exports_ukr_de <- filter(exports_ukr, counterpart_area == "DE" & frequency == "A")
-exports_ukr_de$obs
+trade_datalist <- list()
+
+for (i in 1:nrow(countries_capitals_and_more)) {
+  country <- data.frame(language = countries_capitals_and_more[i, "language"], 
+                        country = countries_capitals_and_more[i, "country"], 
+                        iso2 = countries_capitals_and_more[i, "iso2"], 
+                        capital = countries_capitals_and_more[i, "capital"])
+  
+  exports_ukr_x <- filter(exports_ukr, counterpart_area == country$iso2 & frequency == "A")
+  imports_ukr_x <- filter(imports_ukr, counterpart_area == country$iso2 & frequency == "A")
+  tb_ukr_x <- filter(tb_ukr, counterpart_area == country$iso2 & frequency == "A")
+  if(!is.null(exports_ukr_x) && !is.null(imports_ukr_x) && !is.null(tb_ukr_x)) {
+    print(exports_ukr_x$obj[2][nrow(exports_ukr_x$obs[[1]])])
+    trade_datalist[length(trade_datalist)+1] <- data.frame(language = country$language, 
+                                                           country = country$country, 
+                                                           capital = country$capital, 
+                                                           exports = exports_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])], 
+                                                           imports = imports_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])],
+                                                           balance = tb_ukr_x$obj[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
+  }
+}
+
+countries_capitals_trade <- do.call(rbind, trade_datalist)

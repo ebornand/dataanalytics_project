@@ -40,7 +40,10 @@ for (language in languages) {
   for (c in countries) {
     countriesnow_entry <- filterList(countries_data, c)
     if(!is.null(countriesnow_entry)) {
-      datalist[[length(datalist)+1]] <- data.frame(language = name, country = countriesnow_entry$name, iso2 = countriesnow_entry$iso2, capital = countriesnow_entry$capital)
+      datalist[[length(datalist)+1]] <- data.frame(language = name, 
+                                                   country = countriesnow_entry$name, 
+                                                   iso2 = countriesnow_entry$iso2, 
+                                                   capital = countriesnow_entry$capital)
     }
   }
 }
