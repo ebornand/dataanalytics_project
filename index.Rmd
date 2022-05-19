@@ -1,5 +1,5 @@
 ---
-title: "Data Analytics Project"
+title: "Data Analytics Project | 'We live in an economically globalized, but socially only superficially globalized world!'"
 description: |
   Elea Bornand & Roman Alt | Spring Semester 2022, University of Basel
 site: distill::distill_website
