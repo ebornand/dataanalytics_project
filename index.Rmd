@@ -18,8 +18,8 @@ cat(readLines('text/home.txt'), sep = '\n')
 ```
 
 # Results
-At the moment we can show the development of happiness aswell as a Baseline Graph before the 24.2.2022 for German Twitter
-Also we already have the processed Data from hedonometer.org, aswell as Language, Capital and Iso2 code for all relevant countries.
+At the moment, we can show the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
+Also, we've got the processed data from hedonometer.org as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.
 
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
@@ -53,13 +53,13 @@ head(countries_capitals_and_more, 6)
 
 ```
 
-### Development of Happiness since 24.2.2022 for German Twitter:
+### Development of Happiness (average happiness score) since 24.2.2022 for German Twitter users:
 
 ```{r}
 plot_de_habit
 
 ```
-### Baseline of Happiness for 1 month before 24.2.2022 for German Twitter:
+### Baseline of Happiness (average happiness score) starting 1 month before 24.2.2022 for German Twitter users:
 
 ```{r}
 plot_de_base
