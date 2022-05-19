@@ -1,9 +1,9 @@
 # 1 Introduction to the Topic
-On <i>February, 24, 2022</i> Russia invaded Ukraine. The invasion represents a momentous escalation of the <i>Russo-Ukrainian War</i> that has been going on since 2014. The war mainly revolves around the status of strategically significant regions (e.g., Alfarsi, 2022).<br/><br/>
-Since the invasion, over 4.1 million Ukrainian citizens have suddenly had to flee their home country into the unknown (as of May, 18, 2022; Global Conflict Tracker, 2022). People around the globe are moved by the horrifying circumstances Ukrainians have since been facing day-to-day. The <i>Russia-Ukraine Conflict</i> is all over the news and social media, e.g., Twitter.<br/><br/>
+On <i>February 24, 2022</i> Russia invaded Ukraine. The invasion represents a momentous escalation of the <i>Russo-Ukrainian War</i> that has been going on since 2014. The war mainly revolves around the status of strategically significant regions (e.g., Alfarsi, 2022).<br/><br/>
+Since the invasion, over 4.1 million Ukrainian citizens have suddenly had to flee their home country into the unknown (as of May 18, 2022; Global Conflict Tracker, 2022). People around the globe are moved by the horrifying circumstances Ukrainians have since been facing day-to-day. The <i>Russia-Ukraine Conflict</i> is all over the news and social media, e.g., Twitter.<br/><br/>
 
 ### 1.1 Twitter
-Twitter is a popular “online, global microblog and social networking service“ (Dodds et al., 2011) with <i>500 million tweets per day by 217 million daily active users</i> (i.e., tweeters; as of February, 21, 2022; Selected Company Metrics and Financials, 2022). But how do tweeters feel towards the matters they choose to address? To what extent do their tweets indicate sentiments, e.g., happiness? What words do they use to express their thoughts on the matters?<br/><br/>
+Twitter is a popular “online, global microblog and social networking service“ (Dodds et al., 2011) with <i>500 million tweets per day by 217 million daily active users</i> (i.e., tweeters; as of February 21, 2022; Selected Company Metrics and Financials, 2022). But how do tweeters feel towards the matters they choose to address? To what extent do their tweets indicate sentiments, e.g., happiness? What words do they use to express their thoughts on the matters?<br/><br/>
 
 ### 1.2 Hedonometer
 Quantifying happiness is what the <i>Hedonometer (hedonometer.org)</i> aims at: It meters (and visualizes) Twitter users’ “hedonistic“ (positive) emotions (i.e., happiness in this case). Like other sentiment analysis techniques, it assigns sentiment (happiness) scores (ranging continuously from <i>(1) least</i> to <i>(9) most happy</i>) to textual data based on the words included. To do so, it is fed with wordlists corresponding to the language the textual data is in. Wordlists related to the Hedonometer currently exist in ten different languages, e.g., English, German, Russian and Ukrainian.<br/><br/>
@@ -51,13 +51,13 @@ To find answers to this question, we look at two <i>outcome variables:</i>
 
 <ul>
 <li><i>Reactivity outcome:</i> average happiness scores (mean, standard deviation) <i>one day after</i> the invasion, compared to the average happiness scores <i>one day before</i> the invasion  probable drop in average happiness scores (see Hypotheses)</li>
-<li><i>Habituation:</i> average happiness scores (mean, standard deviation) <i>two weeks after</i> the invasion, compared to the baseline (see next paragraph) -> tweeters in some languages (H: located in countries more distant to Ukraine) will likely (already) have recovered from their “happiness drop“ (H: comparably non-drastic)/returned to their baseline, while others (H: located in countries closer to Ukraine) will not have recovered entirely from their drop (H: comparably drastic)/will not have returned to their baseline (yet) (see Hypotheses)</li>
+<li><i>Habituation:</i> average happiness scores (mean, standard deviation) <i>two weeks after</i> the invasion, compared to the baseline (see next paragraph) -> tweeters in some languages will likely (already) have recovered from their “happiness drop“/returned to their baseline, while others will not have recovered entirely from their drop/will not have returned to their baseline (yet) (see Hypotheses)</li>
 </ul>
 
 A baseline (average happiness scores) is needed for the above outcome variables:</i>
 
 <ul>
-<li><i>Baseline:</i> average happiness scores <i>two weeks prior</i> to the invasion</li>
+<li><i>Baseline:</i> average happiness scores <i>one month prior</i> to the invasion</li>
 </ul>
 
 We collected further data on the countries speaking one of the Hedonometer languages:
@@ -81,7 +81,7 @@ We initially had intended to incorporate more variables, for instance import fro
 
 We were advised to focus on data <i>visualization</i>, as <i>(1)</i> this would be most effective to communicate our results to any audience not familiar with our project, and because <i>(2)</i> the time to work on our project was limited.<br/><br/>
 So, the goal ultimately became to visualize our outcome variables (i.e., reactivity outcome and habituation) and in what ways they vary as a function of our predictor variables (i.e., geodistance and economic relationship).<br/><br/>
-We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code for all relevant countries.<br/><br/>
+We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code (i.e., standard code) for all relevant countries.<br/><br/>
 [Work in progress.]
 
 # 3 Difficulties & Learnings

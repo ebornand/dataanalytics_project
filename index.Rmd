@@ -53,7 +53,7 @@ head(countries_capitals_and_more, 6)
 
 ```
 
-### Development of Happiness (average happiness score) since 24.2.2022 for German Twitter users:
+### Development of Happiness (average happiness score) since 24.2.2022:
 
 ```{r}
 final_plot
