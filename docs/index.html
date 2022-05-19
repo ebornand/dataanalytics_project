@@ -2090,13 +2090,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <h1 id="introduction-to-the-topic">1 Introduction to the Topic</h1>
 <p>On <i>February, 24, 2022</i> Russia invaded Ukraine. The invasion represents a momentous escalation of the <i>Russo-Ukrainian War</i> that has been going on since 2014. The war mainly revolves around the status of strategically significant regions (e.g., Alfarsi, 2022).<br/><br/> Since the invasion, over 4.1 million Ukrainian citizens have suddenly had to flee their home country into the unknown (as of May, 18, 2022; Global Conflict Tracker, 2022). People around the globe are moved by the horrifying circumstances Ukrainians have since been facing day-to-day. The <i>Russia-Ukraine Conflict</i> is all over the news and social media, e.g., Twitter.<br/><br/></p>
-<h2 id="twitter">1.1 Twitter</h2>
+<h3 id="twitter">1.1 Twitter</h3>
 <p>Twitter is a popular “online, global microblog and social networking service“ (Dodds et al., 2011) with <i>500 million tweets per day by 217 million daily active users</i> (i.e., tweeters; as of February, 21, 2022; Selected Company Metrics and Financials, 2022). But how do tweeters feel towards the matters they choose to address? To what extent do their tweets indicate sentiments, e.g., happiness? What words do they use to express their thoughts on the matters?<br/><br/></p>
-<h2 id="hedonometer">1.2 Hedonometer</h2>
+<h3 id="hedonometer">1.2 Hedonometer</h3>
 <p>Quantifying happiness is what the <i>Hedonometer (hedonometer.org)</i> aims at: It meters (and visualizes) Twitter users’ “hedonistic“ (positive) emotions (i.e., happiness in this case). Like other sentiment analysis techniques, it assigns sentiment (happiness) scores (ranging continuously from <i>(1) least</i> to <i>(9) most happy</i>) to textual data based on the words included. To do so, it is fed with wordlists corresponding to the language the textual data is in. Wordlists related to the Hedonometer currently exist in ten different languages, e.g., English, German, Russian and Ukrainian.<br/><br/> The Hedonometer computes the weighted average happiness of text through the following equation (Qiao &amp; Jiang, 2022):</p>
 <img src="happiness-index.PNG"></img>
 <p>
-Figure 1: The equation the hedonometer computes the weighted average happiness score through (Qiao &amp; Jiang, 2022).
+<i>Figure 1: The equation the hedonometer computes the weighted average happiness score through (Qiao &amp; Jiang, 2022).</i>
 </p>
 <ul>
 <li>
@@ -2121,7 +2121,7 @@ h<sub>avg</sub>(w<sub>i</sub>): average happiness of a word
 p<sub>i</sub>: normalized frequency
 </li>
 </ul>
-<h3 id="some-of-the-hedonometers-advantages-are">Some of the Hedonometer’s advantages are:</h3>
+<h3 id="some-of-the-hedonometers-advantages-are">Some of the Hedonometer’s Advantages are:</h3>
 <ul>
 <li>
 It is capable of processing <i>large, real-time</i> textual data rapidly. This enables to gain large-scale insights into social phenomena (Dodds &amp; Danforth, 2009; Johnson &amp; Alluri, 2016).
@@ -2133,8 +2133,7 @@ Unlike surveys, it does not depend on people’s self-reports of their emotional
 The Hedonometer’s ways of processing data are transparent, therefore, their improvement is not restricted to its development team (Dodds &amp; Danforth, 2009).
 </li>
 </ul>
-<h2 id="motivation">1.3 Motivation</h2>
-<h3 id="what-motivates-us-to-work-towards-answering-our-research-question">What motivates us to work towards answering our research question?</h3>
+<h3 id="motivation-what-motivates-us-to-work-towards-answering-our-research-question-see-section-below">1.3 Motivation – What motivates us to work towards answering our research question (see section below)?</h3>
 <ul>
 <li>
 Since the question revolves around an (unfortunately) ongoing conflict (We obviously wish for the conflict to end as soon and peacefully as possible.), it is highly topical. The Hedonometer data is newly and continuously collected.
@@ -2150,9 +2149,10 @@ Most significantly: Terrible incidents take place every day, all around the glob
 </li>
 </ul>
 <h1 id="our-project">2 Our project</h1>
-<h2 id="research-question-outcome-variables">2.1 Research Question &amp; Outcome Variables</h2>
-<p>On February, 24 and the days following, a <i>drop</i> in all languages’ average happiness scores can be noticed. However, shortly after, the scores increase again. This could be due to a <i>habituation effect</i>, similar to the one regarding the COVID-19 pandemic that has been observed by Dan and Brosius (2021).<br/><br/> We, therefore, are interested in addressing the following <i>research question:</p>
-<h3 id="how-do-average-happiness-scores-of-twitter-users-tweeting-in-different-languages-develop-after-february-24-i.e.-day-russia-first-invaded-ukraine-to-find-answers-to-this-question-we-look-at-two-outcome-variables">How do average happiness scores of Twitter users tweeting in different languages develop after February, 24 (i.e., day Russia first invaded Ukraine)?</i> To find answers to this question, we look at two <i>outcome variables:</i></h3>
+<h3 id="research-question-outcome-variables">2.1 Research Question &amp; Outcome Variables</h3>
+<p>On February, 24 and the days following, a <i>drop</i> in all languages’ average happiness scores can be noticed. However, shortly after, the scores increase again. This could be due to a <i>habituation effect</i>, similar to the one regarding the COVID-19 pandemic that has been observed by Dan and Brosius (2021).<br/><br/> We, therefore, are interested in addressing the following <i>research question:</i></p>
+<h3 id="how-do-average-happiness-scores-of-twitter-users-tweeting-in-different-languages-develop-after-february-24-i.e.-day-russia-first-invaded-ukraine">How do average happiness scores of Twitter users tweeting in different languages develop after February, 24 (i.e., day Russia first invaded Ukraine)?</h3>
+<p>To find answers to this question, we look at two <i>outcome variables:</i></p>
 <ul>
 <li>
 <i>Reactivity outcome:</i> average happiness scores (mean, standard deviation) <i>one day after</i> the invasion, compared to the average happiness scores <i>one day before</i> the invasion  probable drop in average happiness scores (see Hypotheses)
@@ -2177,7 +2177,7 @@ A balanced value of <i>import from as well as export to Ukraine in US dollars</i
 </li>
 </ul>
 <p>We initially had intended to incorporate more variables, for instance import from and export to Russia. We then would have had to research information on sanctions possibly imposed on Russia for all countries, which would have made our analysis a lot more complex. So, we decided to stick to the most important variables: geodistance and import from/export to Ukraine.</p>
-<h2 id="hypotheses">2.2 Hypotheses</h2>
+<h3 id="hypotheses">2.2 Hypotheses</h3>
 <ul>
 <li>
 On <i>Geodistance:</i> We hypothesize that geodistance has a systematic effect on people’s affectedness (operationalized as the development of their happiness scores): Twitter users who are geographically <i>less</i> (vs. more) distantly located to Ukraine (i.e., hotspot of the conflict) therefore are expected to show <i>stronger</i> drops in their average happiness scores (reactivity outcome) and (therefore) take <i>longer</i> (i.e., more days since the invasion) to recover from the drop/still not have returned to their baseline (habituation).
@@ -2186,24 +2186,26 @@ On <i>Geodistance:</i> We hypothesize that geodistance has a systematic effect o
 On <i>Economic relationship:</i> We hypothesize that countries’ economic relationship to Ukraine does <i>not</i> have a systematic effect on people’s affectedness (operationalized as the development of their happiness scores): Twitter users therefore are expected to show a development of their average happiness scores (reactivity outcome) and time to return to their baseline (habituation) that is <i>not</i> systematically related to their countries’ economic relationship to Ukraine. This is thought to be due to <i>unawareness</i> of the economic relationships and ways those might be affected by the conflict.
 </li>
 </ul>
-<h1 id="difficulties-along-the-line">3 Difficulties along the line…</h1>
-<h2 id="languages-countries">3.1 Languages ≠ countries</h2>
-<p>Hedonometrics only differentiate between tweeters’ languages, not the countries they are located in. We therefore were challenged to still find a way to fit the data to our research question. We decided to focus on countries’ <i>first national language</i>.<br/><br/> <i>Countries</i> in which <i>languages</i> included in the “Hedonometrics“ are <i>officially</i> spoken (in alphabetical order; Infoplease, 2022):</p>
+<h3 id="methodology">2.3 Methodology</h3>
+<p>We were advised to focus on data <i>visualization</i>, as <i>(1)</i> this would be most effective to communicate our results to any audience not familiar with our project, and because <i>(2)</i> the time to work on our project was limited.<br/><br/> So, the goal ultimately became to visualize our outcome variables (i.e., reactivity outcome and habituation) and in what ways they vary as a function of our predictor variables (i.e., geodistance and economic relationship).<br/><br/> We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code for all relevant countries.<br/><br/> [Work in progress.]</p>
+<h1 id="difficulties-learnings">3 Difficulties &amp; Learnings</h1>
+<h3 id="languages-countries">3.1 Languages ≠ Countries</h3>
+<p>Hedonometrics only differentiate between tweeters’ languages, not the countries they are located in. We therefore were challenged to find a way to still fit the data to our research question. We decided to focus on countries’ <i>first national language</i>.<br/><br/> <i>Countries</i> in which <i>languages</i> included in the “Hedonometrics“ are <i>officially</i> spoken (in alphabetical order; Infoplease, 2022):</p>
 <ul>
 <li>
-<i>Spanish (second most widely spoken language):</i> Argentina; Bolivia; Chile; Colombia; Costa Rica; Cuba; Dominican Republic; East Timor; Ecuador; El Salvador; Equatorial Guinea; Guatemala; Honduras; Mexico; Micronesia; Nicaragua; Panama; Paraguay; Peru; Spain; Uruguay; Venezuela
+<i>Spanish</i> (second most widely spoken language): Argentina; Bolivia; Chile; Colombia; Costa Rica; Cuba; Dominican Republic; East Timor; Ecuador; El Salvador; Equatorial Guinea; Guatemala; Honduras; Mexico; Micronesia; Nicaragua; Panama; Paraguay; Peru; Spain; Uruguay; Venezuela
 </li>
 <li>
-<i>English (third most widely spoken language):</i> Antigua and Barbuda; Barbados; Belize; Botswana; Burundi; Cameroon; Canada; Cape Verde; Dominica; Eritrea; Eswatini; Fiji; Grenada; Guyana; Ireland; Kenya; Kiribati; Lesotho; Liberia; Malawi; Malta; Namibia; New Zealand; Nigeria; Pakistan; Palau; Palestinian State; Papua New Guinea; Philippines; Rwanda; Samoa; Seychelles; Sierra Leone; Singapore; Solomon Islands; South Africa; South Sudan; Sudan; Tanzania; Tonga; Trinidad and Tobago; Tuvalu; Uganda; United Kingdom; United States; Vanuatu; Zambia; Zimbabwe
+<i>English</i> (third most widely spoken language): Antigua and Barbuda; Barbados; Belize; Botswana; Burundi; Cameroon; Canada; Cape Verde; Dominica; Eritrea; Eswatini; Fiji; Grenada; Guyana; Ireland; Kenya; Kiribati; Lesotho; Liberia; Malawi; Malta; Namibia; New Zealand; Nigeria; Pakistan; Palau; Palestinian State; Papua New Guinea; Philippines; Rwanda; Samoa; Seychelles; Sierra Leone; Singapore; Solomon Islands; South Africa; South Sudan; Sudan; Tanzania; Tonga; Trinidad and Tobago; Tuvalu; Uganda; United Kingdom; United States; Vanuatu; Zambia; Zimbabwe
 </li>
 <li>
-<i>Arabic (fifth most widely spoken language):</i> Algeria; Bahrain; Chad; Comoros; Djibouti; Egypt; Eritrea; Iraq; Jordan; Kuwait; Lebanon; Libya; Mauritania; Morocco; Oman; Qatar; Saudi Arabia; Somalia; Sudan; Syria; Tunisia; United Arab Emirates; Yemen
+<i>Arabic</i> (fifth most widely spoken language): Algeria; Bahrain; Chad; Comoros; Djibouti; Egypt; Eritrea; Iraq; Jordan; Kuwait; Lebanon; Libya; Mauritania; Morocco; Oman; Qatar; Saudi Arabia; Somalia; Sudan; Syria; Tunisia; United Arab Emirates; Yemen
 </li>
 <li>
-<i>Portuguese (seventh most widely spoken language):</i> Angola; Brazil; Equatorial Guinea; Guinea-Bissau; Mozambique; Myanmar; Portugal; Democratic Republic of São Tomé and Príncipe
+<i>Portuguese</i> (seventh most widely spoken language): Angola; Brazil; Equatorial Guinea; Guinea-Bissau; Mozambique; Myanmar; Portugal; Democratic Republic of São Tomé and Príncipe
 </li>
 <li>
-<i>Russian (eighth most widely spoken language):</i> Belarus; Kazakhstan; Kyrgyzstan; Russia
+<i>Russian</i> (eighth most widely spoken language): Belarus; Kazakhstan; Kyrgyzstan; Russia
 </li>
 <li>
 <i>Chinese:</i> China; Taiwan
@@ -2221,8 +2223,10 @@ On <i>Economic relationship:</i> We hypothesize that countries’ economic relat
 <i>Ukrainian:</i> Ukraine
 </li>
 </ul>
-<h2 id="manually-generated-data-vs.-apis">3.2 Manually generated data vs. APIs</h2>
-<p>Before Dirk and Rui pointed out in a meeting that there basically is an API to any data one might be in need of, we had already researched and typed in (Google spreadsheet) most geodistance and some economic relationship values by hand. The following links lead to the sites we used:</p>
+<h3 id="non-availability-of-absolute-number-of-twitter-users-per-country">3.2 Non-availability of Absolute Number of Twitter Users per Country</h3>
+<p>Our idea was to <i>weight</i> geodistance (to Kiev) and economic relationship according to the <i>absolute number of Twitter users per country</i> which is part of one of the Hedonometer’s language groups. Unfortunately, we were unable to find data on absolute numbers of Twitter users per country. We found this list of numbers instead: <a href="https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/" class="uri">https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/</a> <br/><br/> However, only thirteen of the 20 listed countries speak one of the Hedonometer’s language.<br/><br/> We therefore were advised to still use this list, but to set the weight of countries not mentioned in the list to the minimum value in the list.</p>
+<h3 id="manually-generated-data-vs.-apis">3.3 Manually generated Data vs. APIs</h3>
+<p>Before we learnt that there basically is an API to any data one might be in need of, we had already researched and typed in (Google spreadsheet) most geodistance and some economic relationship values by hand. The following links lead to the sites we had then used:</p>
 <ul>
 <li>
 Geodistance: <a href="https://www.distance.to/" class="uri">https://www.distance.to/</a>
@@ -2231,9 +2235,10 @@ Geodistance: <a href="https://www.distance.to/" class="uri">https://www.distance
 Economic relationship: <a href="https://oec.world/en/profile/country/ukr" class="uri">https://oec.world/en/profile/country/ukr</a>
 </li>
 </ul>
+<p>Obviously, this manual approach was time-consuming and non-necessary – and we for sure were glad to learn about the APIs – after all, it at least helped to get a first feel for the data.</p>
 </div>
-<h1 id="results">Results</h1>
-<p>At the moment, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users. Also, we’ve got the processed data from hedonometer.org as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.</p>
+<h1 id="results">4 Results</h1>
+<p>Currently, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users. Also, we’ve got the processed Hedonometer data as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
@@ -2382,7 +2387,9 @@ Economic relationship: <a href="https://oec.world/en/profile/country/ukr" class=
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
 </div>
-<h3 id="more-information">More information:</h3>
+<h1 id="limitations">5 Limitations</h1>
+<p>[Work in progress.]</p>
+<h3 id="more-information">More information</h3>
 <ul>
 <li>
 On the Hedonometer in general: <a href="https://hedonometer.org/timeseries/en_all/?from=2020-10-06&amp;to=2022-04-05" class="uri">https://hedonometer.org/timeseries/en_all/?from=2020-10-06&amp;to=2022-04-05</a>

@@ -2,15 +2,15 @@
 On <i>February, 24, 2022</i> Russia invaded Ukraine. The invasion represents a momentous escalation of the <i>Russo-Ukrainian War</i> that has been going on since 2014. The war mainly revolves around the status of strategically significant regions (e.g., Alfarsi, 2022).<br/><br/>
 Since the invasion, over 4.1 million Ukrainian citizens have suddenly had to flee their home country into the unknown (as of May, 18, 2022; Global Conflict Tracker, 2022). People around the globe are moved by the horrifying circumstances Ukrainians have since been facing day-to-day. The <i>Russia-Ukraine Conflict</i> is all over the news and social media, e.g., Twitter.<br/><br/>
 
-## 1.1 Twitter
+### 1.1 Twitter
 Twitter is a popular “online, global microblog and social networking service“ (Dodds et al., 2011) with <i>500 million tweets per day by 217 million daily active users</i> (i.e., tweeters; as of February, 21, 2022; Selected Company Metrics and Financials, 2022). But how do tweeters feel towards the matters they choose to address? To what extent do their tweets indicate sentiments, e.g., happiness? What words do they use to express their thoughts on the matters?<br/><br/>
 
-## 1.2 Hedonometer
+### 1.2 Hedonometer
 Quantifying happiness is what the <i>Hedonometer (hedonometer.org)</i> aims at: It meters (and visualizes) Twitter users’ “hedonistic“ (positive) emotions (i.e., happiness in this case). Like other sentiment analysis techniques, it assigns sentiment (happiness) scores (ranging continuously from <i>(1) least</i> to <i>(9) most happy</i>) to textual data based on the words included. To do so, it is fed with wordlists corresponding to the language the textual data is in. Wordlists related to the Hedonometer currently exist in ten different languages, e.g., English, German, Russian and Ukrainian.<br/><br/>
 The Hedonometer computes the weighted average happiness of text through the following equation (Qiao & Jiang, 2022):
 
 <img src="happiness-index.PNG"></img>
-<p>Figure 1: The equation the hedonometer computes the weighted average happiness score through (Qiao & Jiang, 2022).</p>
+<p><i>Figure 1: The equation the hedonometer computes the weighted average happiness score through (Qiao & Jiang, 2022).</i></p>
 <ul> 
 <li>w<sub>i</sub>: word in the text</li>
 <li>f<sub>i</sub>: frequency of word</li>
@@ -21,7 +21,7 @@ The Hedonometer computes the weighted average happiness of text through the foll
 <li>p<sub>i</sub>: normalized frequency</li>
 </ul>
   
-### Some of the Hedonometer’s advantages are:
+### Some of the Hedonometer’s Advantages are:
 
 <ul>
 <li>It is capable of processing <i>large, real-time</i> textual data rapidly. This enables to gain large-scale insights into social phenomena (Dodds & Danforth, 2009; Johnson & Alluri, 2016).
@@ -29,9 +29,7 @@ The Hedonometer computes the weighted average happiness of text through the foll
 </li><li>The Hedonometer’s ways of processing data are transparent, therefore, their improvement is not restricted to its development team (Dodds & Danforth, 2009).</li>
 </ul>
 
-## 1.3 Motivation
-
-### What motivates us to work towards answering our research question?
+### 1.3 Motivation – What motivates us to work towards answering our research question (see section below)?
 
 <ul>
 <li>Since the question revolves around an (unfortunately) ongoing conflict (We obviously wish for the conflict to end as soon and peacefully as possible.), it is highly topical. The Hedonometer data is newly and continuously collected.</li>
@@ -42,12 +40,14 @@ The Hedonometer computes the weighted average happiness of text through the foll
 
 # 2 Our project
 
-## 2.1 Research Question & Outcome Variables
+### 2.1 Research Question & Outcome Variables
 
 On February, 24 and the days following, a <i>drop</i> in all languages’ average happiness scores can be noticed. However, shortly after, the scores increase again. This could be due to a <i>habituation effect</i>, similar to the one regarding the COVID-19 pandemic that has been observed by Dan and Brosius (2021).<br/><br/>
-We, therefore, are interested in addressing the following <i>research question:
+We, therefore, are interested in addressing the following <i>research question:</i>
 
-### How do average happiness scores of Twitter users tweeting in different languages develop after February, 24 (i.e., day Russia first invaded Ukraine)?</i> To find answers to this question, we look at two <i>outcome variables:</i>
+### How do average happiness scores of Twitter users tweeting in different languages develop after February, 24 (i.e., day Russia first invaded Ukraine)?
+
+To find answers to this question, we look at two <i>outcome variables:</i>
 
 <ul>
 <li><i>Reactivity outcome:</i> average happiness scores (mean, standard deviation) <i>one day after</i> the invasion, compared to the average happiness scores <i>one day before</i> the invasion  probable drop in average happiness scores (see Hypotheses)</li>
@@ -70,26 +70,33 @@ These data were used to calculate each country’s (capital’s) <i>geodistance 
 
 We initially had intended to incorporate more variables, for instance import from and export to Russia. We then would have had to research information on sanctions possibly imposed on Russia for all countries, which would have made our analysis a lot more complex. So, we decided to stick to the most important variables: geodistance and import from/export to Ukraine.
 
-## 2.2 Hypotheses
+### 2.2 Hypotheses
 
 <ul>
 <li>On <i>Geodistance:</i> We hypothesize that geodistance has a systematic effect on people’s affectedness (operationalized as the development of their happiness scores): Twitter users who are geographically <i>less</i> (vs. more) distantly located to Ukraine (i.e., hotspot of the conflict) therefore are expected to show <i>stronger</i> drops in their average happiness scores (reactivity outcome) and (therefore) take <i>longer</i> (i.e., more days since the invasion) to recover from the drop/still not have returned to their baseline (habituation).</li>
 <li>On <i>Economic relationship:</i> We hypothesize that countries’ economic relationship to Ukraine does <i>not</i> have a systematic effect on people’s affectedness (operationalized as the development of their happiness scores): Twitter users therefore are expected to show a development of their average happiness scores (reactivity outcome) and time to return to their baseline (habituation) that is <i>not</i> systematically related to their countries’ economic relationship to Ukraine. This is thought to be due to <i>unawareness</i> of the economic relationships and ways those might be affected by the conflict.</li>
 </ul>
 
-# 3 Difficulties along the line…
+### 2.3 Methodology
 
-## 3.1 Languages ≠ countries
+We were advised to focus on data <i>visualization</i>, as <i>(1)</i> this would be most effective to communicate our results to any audience not familiar with our project, and because <i>(2)</i> the time to work on our project was limited.<br/><br/>
+So, the goal ultimately became to visualize our outcome variables (i.e., reactivity outcome and habituation) and in what ways they vary as a function of our predictor variables (i.e., geodistance and economic relationship).<br/><br/>
+We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code for all relevant countries.<br/><br/>
+[Work in progress.]
 
-Hedonometrics only differentiate between tweeters’ languages, not the countries they are located in. We therefore were challenged to still find a way to fit the data to our research question. We decided to focus on countries’ <i>first national language</i>.<br/><br/>
+# 3 Difficulties & Learnings
+
+### 3.1 Languages ≠ Countries
+
+Hedonometrics only differentiate between tweeters’ languages, not the countries they are located in. We therefore were challenged to find a way to still fit the data to our research question. We decided to focus on countries’ <i>first national language</i>.<br/><br/>
 <i>Countries</i> in which <i>languages</i> included in the “Hedonometrics“ are <i>officially</i> spoken (in alphabetical order; Infoplease, 2022):
 
 <ul>
-<li><i>Spanish (second most widely spoken language):</i> Argentina; Bolivia; Chile; Colombia; Costa Rica; Cuba; Dominican Republic; East Timor; Ecuador; El Salvador; Equatorial Guinea; Guatemala; Honduras; Mexico; Micronesia; Nicaragua; Panama; Paraguay; Peru; Spain; Uruguay; Venezuela</li>
-<li><i>English (third most widely spoken language):</i> Antigua and Barbuda; Barbados; Belize; Botswana; Burundi; Cameroon; Canada; Cape Verde; Dominica; Eritrea; Eswatini; Fiji; Grenada; Guyana; Ireland; Kenya; Kiribati; Lesotho; Liberia; Malawi; Malta; Namibia; New Zealand; Nigeria; Pakistan; Palau; Palestinian State; Papua New Guinea; Philippines; Rwanda; Samoa; Seychelles; Sierra Leone; Singapore; Solomon Islands; South Africa; South Sudan; Sudan; Tanzania; Tonga; Trinidad and Tobago; Tuvalu; Uganda; United Kingdom; United States; Vanuatu; Zambia; Zimbabwe</li>
-<li><i>Arabic (fifth most widely spoken language):</i> Algeria; Bahrain; Chad; Comoros; Djibouti; Egypt; Eritrea; Iraq; Jordan; Kuwait; Lebanon; Libya; Mauritania; Morocco; Oman; Qatar; Saudi Arabia; Somalia; Sudan; Syria; Tunisia; United Arab Emirates; Yemen</li>
-<li><i>Portuguese (seventh most widely spoken language):</i> Angola; Brazil; Equatorial Guinea; Guinea-Bissau; Mozambique; Myanmar; Portugal; Democratic Republic of São Tomé and Príncipe</li>
-<li><i>Russian (eighth most widely spoken language):</i> Belarus; Kazakhstan; Kyrgyzstan; Russia</li>
+<li><i>Spanish</i> (second most widely spoken language): Argentina; Bolivia; Chile; Colombia; Costa Rica; Cuba; Dominican Republic; East Timor; Ecuador; El Salvador; Equatorial Guinea; Guatemala; Honduras; Mexico; Micronesia; Nicaragua; Panama; Paraguay; Peru; Spain; Uruguay; Venezuela</li>
+<li><i>English</i> (third most widely spoken language): Antigua and Barbuda; Barbados; Belize; Botswana; Burundi; Cameroon; Canada; Cape Verde; Dominica; Eritrea; Eswatini; Fiji; Grenada; Guyana; Ireland; Kenya; Kiribati; Lesotho; Liberia; Malawi; Malta; Namibia; New Zealand; Nigeria; Pakistan; Palau; Palestinian State; Papua New Guinea; Philippines; Rwanda; Samoa; Seychelles; Sierra Leone; Singapore; Solomon Islands; South Africa; South Sudan; Sudan; Tanzania; Tonga; Trinidad and Tobago; Tuvalu; Uganda; United Kingdom; United States; Vanuatu; Zambia; Zimbabwe</li>
+<li><i>Arabic</i> (fifth most widely spoken language): Algeria; Bahrain; Chad; Comoros; Djibouti; Egypt; Eritrea; Iraq; Jordan; Kuwait; Lebanon; Libya; Mauritania; Morocco; Oman; Qatar; Saudi Arabia; Somalia; Sudan; Syria; Tunisia; United Arab Emirates; Yemen</li>
+<li><i>Portuguese</i> (seventh most widely spoken language): Angola; Brazil; Equatorial Guinea; Guinea-Bissau; Mozambique; Myanmar; Portugal; Democratic Republic of São Tomé and Príncipe</li>
+<li><i>Russian</i> (eighth most widely spoken language): Belarus; Kazakhstan; Kyrgyzstan; Russia</li>
 <li><i>Chinese:</i> China; Taiwan</li>
 <li><i>French:</i> Belgium; Benin; Burkina Faso; Burundi; Cameroon; Canada; Cape Verde; Central African Republic; Chad; Comoros; Democratic Republic of the Congo; Republic of Congo; Côte d’Ivoire; Djibouti; Equatorial Guinea; France; Gabon; Gambia; Guinea; Haiti; Luxembourg; Madagascar; Mali; Monaco; Niger; Rwanda; Senegal; Seychelles; Switzerland; Togo; Vanuatu</li>
 <li><i>German:</i> Austria; Belgium; Germany; Italy; Liechtenstein; Luxembourg; Switzerland</li>
@@ -97,11 +104,19 @@ Hedonometrics only differentiate between tweeters’ languages, not the countrie
 <li><i>Ukrainian:</i> Ukraine</li>
 </ul>
 
-## 3.2 Manually generated data vs. APIs
+### 3.2 Non-availability of Absolute Number of Twitter Users per Country
 
-Before Dirk and Rui pointed out in a meeting that there basically is an API to any data one might be in need of, we had already researched and typed in (Google spreadsheet) most geodistance and some economic relationship values by hand. The following links lead to the sites we used:
+Our idea was to <i>weight</i> geodistance (to Kiev) and economic relationship according to the <i>absolute number of Twitter users per country</i> which is part of one of the Hedonometer’s language groups. Unfortunately, we were unable to find data on absolute numbers of Twitter users per country. We found this list of numbers instead: https://www.statista.com/statistics/242606/number-of-active-twitter-users-in-selected-countries/ <br/><br/>
+However, only thirteen of the 20 listed countries speak one of the Hedonometer’s language.<br/><br/>
+We therefore were advised to still use this list, but to set the weight of countries not mentioned in the list to the minimum value in the list.
+
+### 3.3 Manually generated Data vs. APIs
+
+Before we learnt that there basically is an API to any data one might be in need of, we had already researched and typed in (Google spreadsheet) most geodistance and some economic relationship values by hand. The following links lead to the sites we had then used:
 
 <ul>
 <li>Geodistance: https://www.distance.to/</li>
 <li>Economic relationship: https://oec.world/en/profile/country/ukr</li>
 </ul>
+
+Obviously, this manual approach was time-consuming and non-necessary – and we for sure were glad to learn about the APIs – after all, it at least helped to get a first feel for the data.
