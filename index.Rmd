@@ -67,7 +67,6 @@ plot_de_base
 ```
 
 # 5 Limitations
-
 [Work in progress.]
 
 ### More information
