@@ -9,3 +9,6 @@ coordinates_berlin <- c(df_geocode_berlin$locations[[1]]$referencePosition$latit
 url_test <- capture.output(cat('https://api.distancematrix.ai/maps/api/distancematrix/json?origins=',coordinates_kiew[1],',',coordinates_kiew[2],'&destinations=',coordinates_berlin[1],',',coordinates_berlin[2],'&key=PLYEuZwg3IgiJPUOvpIS91prJ7jLB', sep = ""))
 df_distance <- fromJSON(file = url_test)
 
+for (i in countries_capitals_and_more) {
+  
+}

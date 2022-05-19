@@ -42,15 +42,15 @@ for (i in 1:nrow(countries_capitals_and_more)) {
   exports_ukr_x <- filter(exports_ukr, counterpart_area == country$iso2 & frequency == "A")
   imports_ukr_x <- filter(imports_ukr, counterpart_area == country$iso2 & frequency == "A")
   tb_ukr_x <- filter(tb_ukr, counterpart_area == country$iso2 & frequency == "A")
-  print(exports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
-  if(dim(exports_ukr_x)[1] != 0 && dim(imports_ukr_x)[1] != 0 && dim(tb_ukr_x)[1] != 0) {
-    test_stuff_oof <- data.frame(language = country$language, 
-                                 country = country$country, 
-                                 capital = country$capital, 
-                                 exports = exports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])], 
-                                 imports = imports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])],
-                                 balance = tb_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
-    trade_datalist[length(trade_datalist)+1] <- test_stuff_oof
+  if(nrow(exports_ukr_x) != "0" && nrow(imports_ukr_x)[1] != "0" && nrow(tb_ukr_x)[1] != "0") {
+    data_frame_test <- data.frame(language = country$language, 
+                                  country = country$country, 
+                                  capital = country$capital, 
+                                  exports = exports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])], 
+                                  imports = imports_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])],
+                                  balance = tb_ukr_x$obs[[1]][[2]][nrow(exports_ukr_x$obs[[1]])])
+    print(data_frame_test)
+    trade_datalist[[length(trade_datalist)+1]] <- data_frame_test
   }
 }
 
