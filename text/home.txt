@@ -51,13 +51,13 @@ To find answers to this question, we look at two <i>outcome variables:</i>
 
 <ul>
 <li><i>Reactivity outcome:</i> average happiness scores (mean, standard deviation) <i>one day after</i> the invasion, compared to the average happiness scores <i>one day before</i> the invasion  probable drop in average happiness scores (see Hypotheses)</li>
-<li><i>Habituation:</i> average happiness scores (mean, standard deviation) <i>two weeks after</i> the invasion, compared to the baseline (see next paragraph) -> tweeters in some languages (H: located in countries more distant to Ukraine) will likely (already) have recovered from their “happiness drop“ (H: comparably non-drastic)/returned to their baseline, while others (H: located in countries closer to Ukraine) will not have recovered entirely from their drop (H: comparably drastic)/will not have returned to their baseline (yet) (see Hypotheses)</li>
+<li><i>Habituation:</i> average happiness scores (mean, standard deviation) <i>two weeks after</i> the invasion, compared to the baseline (see next paragraph) -> tweeters in some languages will likely (already) have recovered from their “happiness drop“/returned to their baseline, while others will not have recovered entirely from their drop/will not have returned to their baseline (yet) (see Hypotheses)</li>
 </ul>
 
 A baseline (average happiness scores) is needed for the above outcome variables:</i>
 
 <ul>
-<li><i>Baseline:</i> average happiness scores <i>two weeks prior</i> to the invasion</li>
+<li><i>Baseline:</i> average happiness scores <i>one month prior</i> to the invasion</li>
 </ul>
 
 We collected further data on the countries speaking one of the Hedonometer languages:
@@ -81,7 +81,7 @@ We initially had intended to incorporate more variables, for instance import fro
 
 We were advised to focus on data <i>visualization</i>, as <i>(1)</i> this would be most effective to communicate our results to any audience not familiar with our project, and because <i>(2)</i> the time to work on our project was limited.<br/><br/>
 So, the goal ultimately became to visualize our outcome variables (i.e., reactivity outcome and habituation) and in what ways they vary as a function of our predictor variables (i.e., geodistance and economic relationship).<br/><br/>
-We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code for all relevant countries.<br/><br/>
+We first collected the processed data from hedonometer.org as well as the variables Language, Capital and Iso2 code (i.e., standard code) for all relevant countries.<br/><br/>
 [Work in progress.]
 
 # 3 Difficulties & Learnings
