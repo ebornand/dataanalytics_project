@@ -1,7 +1,11 @@
 ---
-title: "About this site"
+title: "About our project"
 description: |
-  Some additional details about the website
+  This is the website to our group project that we worked on in the course of the Data Analytics seminar supervised by Dirk Wulff and Rui Mata in the spring semester of 2022, at the Faculty of Psychology, University of Basel.
+  
+  In the course of the semester, this website was regularly updated to the state of our project that we concluded with our final project presentation on May, 25 2022.
+  
+  We hope you enjoy reading it!
 ---
 
 ```{r setup, include=FALSE}
