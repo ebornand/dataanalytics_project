@@ -18,8 +18,8 @@ cat(readLines('text/home.txt'), sep = '\n')
 ```
 
 # Results
-At the moment we can show the development of happiness aswell as a Baseline Graph before the 24.2.2022 for German Twitter
-Also we already have the processed Data from hedonometer.org, aswell as Language, Capital and Iso2 code for all relevant countries.
+At the moment, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
+Also, we've got the processed data from hedonometer.org as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.
 
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
@@ -53,14 +53,34 @@ head(countries_capitals_and_more, 6)
 
 ```
 
-### Development of Happiness since 24.2.2022 for German Twitter:
+### Development of Happiness (average happiness score) since 24.2.2022 for German Twitter users:
 
 ```{r}
 plot_de_habit
 
 ```
-### Baseline of Happiness for 1 month before 24.2.2022 for German Twitter:
+### Baseline of Happiness (average happiness score) starting 1 month before 24.2.2022 for German Twitter users:
 
 ```{r}
 plot_de_base
 
+```
+
+### More information:
+<ul>
+<li>On the Hedonometer in general: https://hedonometer.org/timeseries/en_all/?from=2020-10-06&to=2022-04-05</li>
+<li>On the wordlists used for the Hedonometer (e.g., English): https://hedonometer.org/words/labMT-en-v2/</li>
+<li>On the Hedonometer data: https://hedonometer.org/api.html</li>
+</ul>
+ 
+### References
+<ul>
+<li>Alfarsi, H. (2022). https://www.profolus.com/topics/causes-of-the-russia-ukraine-conflict-an-explainer/ [04.01.2022]</li>
+<li>Dan, V., & Brosius, H. B. (2021). The onset of habituation effects: Predicting fluctuations in news use during the COVID-19 pandemic by disease occurrence. European Journal of Health Communication, 2(3), 44-61. https://doi.org/10.47368/ejhc.2021.303</li>
+<li>Dodds, P. S., Harris, K. D., Kloumann, I. M., Bliss, C. A., & Danforth, C. M. (2011). Temporal patterns of happiness and information in a global social network: Hedonometrics and Twitter. PloS one, 6(12), e26752. https://doi.org/10.1371/journal.pone.0026752</li>
+<li>Dodds, P. S., & Danforth, C. M. (2010). Measuring the happiness of large-scale written expression: Songs, blogs, and presidents. Journal of happiness studies, 11(4), 441-456. https://doi.org/10.1007/s10902-009-9150-9</li>
+<li>Global Conflict Tracker (2022). https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine [04.01.2022]</li>
+<li>Infoplease (2022). https://www.infoplease.com/world/countries/languages-spoken-in-each-country-of-the-world [04.01.2022]</li>
+<li>Johnson, B., & Alluri, A. (2022). If you’re happy and you know it, write a tweet. http://www.marketplace.org/2015/02/10/tech/if-youre-happy-and-you-know-it-write-tweet [04.01.2022]</li>
+<li>Qiao, F., & Jiang, K. (2021). Attitudes Towards Global Warming on Twitter: A Hedonometer-Appraisal Analysis. Journal of Global Information Management (JGIM), 30(7), 1-20. https://doi.org/10.4018/JGIM.296708</li>
+</ul>
