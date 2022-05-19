@@ -18,7 +18,7 @@ cat(readLines('text/home.txt'), sep = '\n')
 ```
 
 # Results
-At the moment, we can show the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
+At the moment, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
 Also, we've got the processed data from hedonometer.org as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.
 
 ```{r echo=FALSE, eval=FALSE}
