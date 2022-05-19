@@ -20,6 +20,7 @@ data_baseline_mean <- c()
 data_baseline_sd <- c()
 data_reactivity <- c()
 data_habituation <- c()
+#data_standardized_happiness <- c()
 
 for (d in data_hedon_total) {
   language <- d[[1]]
@@ -30,6 +31,7 @@ for (d in data_hedon_total) {
   data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
   data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
   data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+  #data_standardized_happiness <- append(data_standardized_happiness, )
 }
 
 hedonometer_data <- data.frame(language = data_language, baseline_mean = data_baseline_mean, baseline_sd = data_baseline_sd, reactivity = data_reactivity, habituation = data_habituation)

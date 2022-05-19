@@ -56,15 +56,10 @@ head(countries_capitals_and_more, 6)
 ### Development of Happiness (average happiness score) since 24.2.2022 for German Twitter users:
 
 ```{r}
-plot_de_habit
+final_plot
 
 ```
-### Baseline of Happiness (average happiness score) starting 1 month before 24.2.2022 for German Twitter users:
 
-```{r}
-plot_de_base
-
-```
 
 ### More information:
 <ul>
