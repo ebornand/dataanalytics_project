@@ -18,8 +18,8 @@ cat(readLines('text/home.txt'), sep = '\n')
 ```
 
 # Results
-At the moment, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
-Also, we've got the processed data from hedonometer.org as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.
+Currently, we can display the development of the average happiness score as well as a baseline graph before the 24.2.2022 (i.e., first day of invasion) for <i>German</i> Twitter users.
+Also, we've got the processed Hedonometer data as well as the variables <i>Language, Capital and Iso2 code</i> for all relevant countries.
 
 ```{r echo=FALSE, eval=FALSE}
 install.packages("rjson")
@@ -66,7 +66,7 @@ plot_de_base
 
 ```
 
-### More information:
+### More information
 <ul>
 <li>On the Hedonometer in general: https://hedonometer.org/timeseries/en_all/?from=2020-10-06&to=2022-04-05</li>
 <li>On the wordlists used for the Hedonometer (e.g., English): https://hedonometer.org/words/labMT-en-v2/</li>
