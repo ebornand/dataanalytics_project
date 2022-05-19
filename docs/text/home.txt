@@ -120,7 +120,3 @@ Before we learnt that there basically is an API to any data one might be in need
 </ul>
 
 Obviously, this manual approach was time-consuming and non-necessary – and we for sure were glad to learn about the APIs – after all, it at least helped to get a first feel for the data.
-
-# 4 Limitations
-
-[Work in progress.]
