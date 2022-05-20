@@ -93,7 +93,7 @@ final_plot <- ggplot() +
   geom_smooth(data = data_uk_habit, aes(x = data_uk_habit$date, y = data_uk_habit$happiness), color = "yellow") +
   geom_smooth(data = data_pt_habit, aes(x = data_pt_habit$date, y = data_pt_habit$happiness), color = "#F1C40F") +
   geom_smooth(data = data_id_habit, aes(x = data_id_habit$date, y = data_id_habit$happiness), color = "#F39C12") +
-  geom_smooth(data = data_fr_habit, aes(x = data_fr_habit$date, y = data_fr_habit$happiness), color = "#E67E22") +
+  geom_smooth(data = data_fr_habit, aes(x = data_fr_habit$date, y = data_fr_habit$happiness), color = "black") +
   geom_smooth(data = data_ko_habit, aes(x = data_ko_habit$date, y = data_ko_habit$happiness), color = "#D35400") +
   geom_smooth(data = data_ar_habit, aes(x = data_ar_habit$date, y = data_ar_habit$happiness), color = "#34495E") +
   xlab('Date') +
