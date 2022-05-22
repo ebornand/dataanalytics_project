@@ -87,16 +87,16 @@ data_fr_habit <- standardizeHedonData(data_fr_habit, "fr")
 data_fr_base <- function.createHedonDataFrame(fr_base_json)
 
 final_plot <- ggplot() + 
-  geom_ma(data = data_de_habit, aes(x = data_de_habit$date, y = data_de_habit$happiness), color = "red") +
-  geom_smooth(data = data_en_habit, aes(x = data_en_habit$date, y = data_en_habit$happiness), color = "green") +
-  geom_smooth(data = data_es_habit, aes(x = data_es_habit$date, y = data_es_habit$happiness), color = "#2980B9") +
-  geom_smooth(data = data_ru_habit, aes(x = data_ru_habit$date, y = data_ru_habit$happiness), color = "blue") +
-  geom_smooth(data = data_uk_habit, aes(x = data_uk_habit$date, y = data_uk_habit$happiness), color = "yellow") +
-  geom_smooth(data = data_pt_habit, aes(x = data_pt_habit$date, y = data_pt_habit$happiness), color = "#F1C40F") +
-  geom_smooth(data = data_id_habit, aes(x = data_id_habit$date, y = data_id_habit$happiness), color = "#F39C12") +
-  geom_smooth(data = data_fr_habit, aes(x = data_fr_habit$date, y = data_fr_habit$happiness), color = "black") +
-  geom_smooth(data = data_ko_habit, aes(x = data_ko_habit$date, y = data_ko_habit$happiness), color = "#D35400") +
-  geom_smooth(data = data_ar_habit, aes(x = data_ar_habit$date, y = data_ar_habit$happiness), color = "#34495E") +
+  geom_smooth(data = data_de_habit, aes(x = date, y = happiness), color = "red", se = FALSE) +
+  geom_smooth(data = data_en_habit, aes(x = date, y = happiness), color = "green", se = FALSE) +
+  geom_smooth(data = data_es_habit, aes(x = date, y = happiness), color = "#2980B9", se = FALSE) +
+  geom_smooth(data = data_ru_habit, aes(x = date, y = happiness), color = "blue", se = FALSE) +
+  geom_smooth(data = data_uk_habit, aes(x = date, y = happiness), color = "yellow", se = FALSE) +
+  geom_smooth(data = data_pt_habit, aes(x = date, y = happiness), color = "#F1C40F", se = FALSE) +
+  geom_smooth(data = data_id_habit, aes(x = date, y = happiness), color = "#F39C12", se = FALSE) +
+  geom_smooth(data = data_fr_habit, aes(x = date, y = happiness), color = "black", se = FALSE) +
+  geom_smooth(data = data_ko_habit, aes(x = date, y = happiness), color = "#D35400", se = FALSE) +
+  geom_smooth(data = data_ar_habit, aes(x = date, y = happiness), color = "#34495E", se = FALSE) +
   xlab('Date') +
   ylab('Happiness Score') +
   labs(color="Languages")
@@ -110,5 +110,6 @@ standardizeHedonData <- function(hedon_data, lang) {
 }
 #adding a segment from geom_ma
 
-trade_plot <- ggplot(data = final_language_table, aes(x = language, y = trade)) + geom_bar(stat = "identity")
-distance_plot <- ggplot(data = final_language_table, aes(x = language, y = distance)) + geom_bar(stat = "identity")
+data_language_final <- read.csv("data/final_language_data")
+trade_plot <- ggplot(data = data_language_final, aes(x = language, y = trade)) + geom_bar(stat = "identity")
+distance_plot <- ggplot(data = data_language_final, aes(x = language, y = distance)) + geom_bar(stat = "identity")
