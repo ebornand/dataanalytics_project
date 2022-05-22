@@ -1,5 +1,6 @@
 install.packages("rjson")
 install.packages("ggplot2")
+install.packages("tidyquant")
 library("rjson")
 library("ggplot2")
 source("code/JSON_handler.R")
@@ -86,7 +87,7 @@ data_fr_habit <- standardizeHedonData(data_fr_habit, "fr")
 data_fr_base <- function.createHedonDataFrame(fr_base_json)
 
 final_plot <- ggplot() + 
-  geom_smooth(data = data_de_habit, aes(x = data_de_habit$date, y = data_de_habit$happiness), color = "red") +
+  geom_ma(data = data_de_habit, aes(x = data_de_habit$date, y = data_de_habit$happiness), color = "red") +
   geom_smooth(data = data_en_habit, aes(x = data_en_habit$date, y = data_en_habit$happiness), color = "green") +
   geom_smooth(data = data_es_habit, aes(x = data_es_habit$date, y = data_es_habit$happiness), color = "#2980B9") +
   geom_smooth(data = data_ru_habit, aes(x = data_ru_habit$date, y = data_ru_habit$happiness), color = "blue") +
@@ -107,3 +108,7 @@ standardizeHedonData <- function(hedon_data, lang) {
   }
   return(hedon_data)
 }
+#adding a segment from geom_ma
+
+trade_plot <- ggplot(data = final_language_table, aes(x = language, y = trade)) + geom_bar(stat = "identity")
+distance_plot <- ggplot(data = final_language_table, aes(x = language, y = distance)) + geom_bar(stat = "identity")

@@ -12,3 +12,23 @@ twitter_countries <- c("US", "JP", "IN", "BR", "ID",
 
 twitter_data <- data.frame(twitter_countries, twitter_users, stringsAsFactors = FALSE)
 
+data_twitter_users <- list()
+
+for (i in 1:nrow(countries_capitals_and_more)) {
+  country <- data.frame(language = countries_capitals_and_more[i, "language"], 
+                        country = countries_capitals_and_more[i, "country"], 
+                        iso2 = countries_capitals_and_more[i, "iso2"], 
+                        capital = countries_capitals_and_more[i, "capital"])
+  users <- 4.3
+  for (x in 1:length(twitter_countries)) {
+    if(twitter_countries[x] == country$iso2) {
+      users <- twitter_users[x]
+      print(twitter_users[x])
+    }
+  }
+  data_twitter_users[[length(data_twitter_users)+1]] <- data.frame(language = country$language, 
+                                                                 country = country$country, 
+                                                                 users = users)
+}
+
+countries_twitter_users <- do.call(rbind, data_twitter_users)

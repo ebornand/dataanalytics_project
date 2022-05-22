@@ -42,16 +42,6 @@ data_de_base <- function.createHedonDataFrame(de_base_json)
 plot_de_habit <- function.basic_plot(data_de_habit)
 plot_de_base <- function.basic_plot(data_de_base)
 ```
-#### Hedonometer Data
-```{r render=lemon_print}
-hedonometer_data
-
-```
-#### Countries Data
-```{r render=lemon_print}
-head(countries_capitals_and_more, 6)
-
-```
 
 ### Development of Happiness (average happiness score) since 24.2.2022:
 
@@ -59,7 +49,16 @@ head(countries_capitals_and_more, 6)
 final_plot
 
 ```
+### Weighted Distances of Language-Groups:
+```{r}
+distance_plot
 
+```
+### Weighted Trade-Volume of Language-Groups:
+```{r}
+trade_plot
+
+```
 
 # 5 Limitations
 [Work in progress.]
