@@ -1,0 +1,512 @@
+ru_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+ru_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_ru_habit <- function.createHedonDataFrame(ru_habit_json)
+data_ru_base <- function.createHedonDataFrame(ru_base_json)
+#Spanish
+es_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+es_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_es_habit <- function.createHedonDataFrame(es_habit_json)
+data_es_base <- function.createHedonDataFrame(es_base_json)
+#Portuguese
+pt_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+pt_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_pt_habit <- function.createHedonDataFrame(pt_habit_json)
+data_pt_base <- function.createHedonDataFrame(pt_base_json)
+#French
+fr_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+fr_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_fr_habit <- function.createHedonDataFrame(fr_habit_json)
+data_fr_base <- function.createHedonDataFrame(fr_base_json)
+#Arabic
+ar_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+ar_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_ar_habit <- function.createHedonDataFrame(ar_habit_json)
+data_ar_base <- function.createHedonDataFrame(ar_base_json)
+#Ukrainian
+ua_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+ua_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_ua_habit <- function.createHedonDataFrame(ua_habit_json)
+data_ua_base <- function.createHedonDataFrame(ua_base_json)
+mean(data_en_base$happiness)
+sd(data_en_base$happiness)
+data_ar_base
+data_hedon_total <- c(c("english", data_en_base, data_en_habit),
+c("german", data_de_base, data_de_habit),
+c("russian", data_ru_base, data_ru_habit),
+c("spanish", data_es_base, data_es_habit),
+c("portuguese", data_pt_base, data_pt_habit),
+c("french", data_fr_base, data_fr_habit),
+c("arabic", data_ar_base, data_ar_habit),
+c("ukrainian", data_ua_base, data_ua_habit))
+data_hedon_total[0]
+data_hedon_total[1]
+data_hedon_total
+data_hedon_total[1][1]
+data_hedon_total[1][1]$happiness
+View(data_hedon_total)
+View(data_hedon_total)
+data_hedon_total <- data.frame(c("english", data_en_base, data_en_habit),
+c("german", data_de_base, data_de_habit),
+c("russian", data_ru_base, data_ru_habit),
+c("spanish", data_es_base, data_es_habit),
+c("portuguese", data_pt_base, data_pt_habit),
+c("french", data_fr_base, data_fr_habit),
+c("arabic", data_ar_base, data_ar_habit),
+c("ukrainian", data_ua_base, data_ua_habit))
+data_hedon_total <- list(c("english", data_en_base, data_en_habit),
+c("german", data_de_base, data_de_habit),
+c("russian", data_ru_base, data_ru_habit),
+c("spanish", data_es_base, data_es_habit),
+c("portuguese", data_pt_base, data_pt_habit),
+c("french", data_fr_base, data_fr_habit),
+c("arabic", data_ar_base, data_ar_habit),
+c("ukrainian", data_ua_base, data_ua_habit))
+View(data_hedon_total)
+View(data_en_base)
+data_hedon_total
+data_hedon_total[1]
+test <- data_hedon_total[1]
+test[1]
+test[[1]]
+test$happiness
+test[1]$happiness
+data_hedon_total <- list(list("english", data_en_base, data_en_habit),
+list("german", data_de_base, data_de_habit),
+list("russian", data_ru_base, data_ru_habit),
+list("spanish", data_es_base, data_es_habit),
+list("portuguese", data_pt_base, data_pt_habit),
+list("french", data_fr_base, data_fr_habit),
+list("arabic", data_ar_base, data_ar_habit),
+list("ukrainian", data_ua_base, data_ua_habit))
+data_hedon_total[1]
+names(data_hedon_total[1])
+data_hedon_total[1][1]
+View(data_hedon_total)
+data_hedon_total[[1]]
+test[[1]]
+data_hedon_total[[1]]
+data_hedon_total[[1]][[1]]
+data_hedon_total[1][1]
+?lm
+slope_test <- coef(lm(data_hedon_total[[1]][[3]], data_hedon_total[[1]][[3]]$happiness ~ data_hedon_total[[1]][[3]]$date))
+slope_test <- coef(lm(data_hedon_total[[1]][[3]]$happiness ~ data_hedon_total[[1]][[3]]$date, data = data_hedon_total[[1]][[3]]))
+slope_test
+View(data_hedon_total)
+data_hedon_total[[1]][[3]]$happiness[1]
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1])
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1])
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1])
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+base <- d[[2]]
+language <- d[[1]]
+language
+language
+d
+data_language <- append(data_language, language)
+for (d in data_hedon_total) {
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1])
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+?data_hedon_total[[1]][[3]]$happiness[1]
+data_hedon_total[[1]][[3]]$happiness[1]
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+data_hedon_total <- list(list("english", data_en_base, data_en_habit),
+list("german", data_de_base, data_de_habit),
+list("russian", data_ru_base, data_ru_habit),
+list("spanish", data_es_base, data_es_habit),
+list("portuguese", data_pt_base, data_pt_habit),
+list("french", data_fr_base, data_fr_habit),
+list("arabic", data_ar_base, data_ar_habit),
+list("ukrainian", data_ua_base, data_ua_habit))
+source("code/JSON_handler.R")
+#English
+en_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=en_all&date__gte=2022-02-24&limit=1000")
+en_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=en_all&date__gte=2022-01-24&limit=31")
+data_en_habit <- function.createHedonDataFrame(en_habit_json)
+data_en_base <- function.createHedonDataFrame(en_base_json)
+#German
+de_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+de_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_de_habit <- function.createHedonDataFrame(de_habit_json)
+data_de_base <- function.createHedonDataFrame(de_base_json)
+#Russian
+ru_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=ru_all&date__gte=2022-02-24&limit=1000")
+ru_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=ru_all&date__gte=2022-01-24&limit=31")
+data_ru_habit <- function.createHedonDataFrame(ru_habit_json)
+data_ru_base <- function.createHedonDataFrame(ru_base_json)
+#Spanish
+es_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=es_all&date__gte=2022-02-24&limit=1000")
+es_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=es_all&date__gte=2022-01-24&limit=31")
+data_es_habit <- function.createHedonDataFrame(es_habit_json)
+data_es_base <- function.createHedonDataFrame(es_base_json)
+#Portuguese
+pt_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=pt_all&date__gte=2022-02-24&limit=1000")
+pt_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=pt_all&date__gte=2022-01-24&limit=31")
+data_pt_habit <- function.createHedonDataFrame(pt_habit_json)
+data_pt_base <- function.createHedonDataFrame(pt_base_json)
+#French
+fr_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=fr_all&date__gte=2022-02-24&limit=1000")
+fr_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=fr_all&date__gte=2022-01-24&limit=31")
+data_fr_habit <- function.createHedonDataFrame(fr_habit_json)
+data_fr_base <- function.createHedonDataFrame(fr_base_json)
+#Arabic
+ar_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=ar_all&date__gte=2022-02-24&limit=1000")
+ar_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=ar_all&date__gte=2022-01-24&limit=31")
+data_ar_habit <- function.createHedonDataFrame(ar_habit_json)
+data_ar_base <- function.createHedonDataFrame(ar_base_json)
+#Ukrainian
+ua_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=uk_all&date__gte=2022-02-24&limit=1000")
+ua_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=uk_all&date__gte=2022-01-24&limit=31")
+data_ua_habit <- function.createHedonDataFrame(ua_habit_json)
+data_ua_base <- function.createHedonDataFrame(ua_base_json)
+data_hedon_total <- list(list("english", data_en_base, data_en_habit),
+list("german", data_de_base, data_de_habit),
+list("russian", data_ru_base, data_ru_habit),
+list("spanish", data_es_base, data_es_habit),
+list("portuguese", data_pt_base, data_pt_habit),
+list("french", data_fr_base, data_fr_habit),
+list("arabic", data_ar_base, data_ar_habit),
+list("ukrainian", data_ua_base, data_ua_habit))
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total <- append(data_hedon_total, list(l, base_data, habit_data))
+}
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total <- append(data_hedon_total, list(l, base_data, habit_data))
+}
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total <- append(data_hedon_total, list(l, base_data, habit_data))
+}
+capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000"))
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total <- append(data_hedon_total, list(l, base_data, habit_data))
+}
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(data_hedon_total)
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+data_hedon_total[1]
+data_hedon_total[[1]]
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+source("code/JSON_handler.R")
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+View(data_hedon_total)
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+data_hedon_total[[1]][[3]]$happiness[1]
+data_hedon_total[[1]][[3]]$happiness
+for (l in languages_iso2) {
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+hedonometer_data <- NA
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+data_hedon_total <- na
+data_hedon_total <- _NA
+data_hedon_total <- NA
+languages_iso2 <- c("en", "de", "ru", "es", "pt", "fr", "ar", "id", "ko")
+data_hedon_total <- list()
+for (l in languages_iso2) {
+habit_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-02-24&limit=1000", sep = "")))
+base_json_data <- fromJSON(file = capture.output(cat("http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=",
+l, "_all&date__gte=2022-01-24&limit=31", sep = "")))
+base_data <- function.createHedonDataFrame(base_json_data)
+habit_data <- function.createHedonDataFrame(habit_json_data)
+data_hedon_total[[length(data_hedon_total)+1]] <- list(l, base_data, habit_data)
+}
+#creating final data frame
+data_language <- c()
+data_baseline_mean <- c()
+data_baseline_sd <- c()
+data_reactivity <- c()
+data_habituation <- c()
+for (d in data_hedon_total) {
+language <- d[[1]]
+base <- d[[2]]
+habit <- d[[3]]
+data_language <- append(data_language, language)
+data_baseline_mean <- append(data_baseline_mean, mean(base$happiness))
+data_baseline_sd <- append(data_baseline_sd, sd(base$happiness))
+data_reactivity <- append(data_reactivity, (mean(base$happiness) - habit$happiness[1]))
+data_habituation <-append(data_habituation, coef(lm(habit$happiness ~ habit$date, data = habit))[2])
+}
+hedonometer_data <- data.frame(data_language, data_baseline_mean, data_baseline_sd, data_reactivity, data_habituation)
+View(hedonometer_data)
+library("rmarkdiwn")
+library("rmarkdo$wn")
+library("rmarkdown")
+render_site()
+knitr::opts_chunk$set(echo = FALSE)
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+install.packages("rjson")
+install.packages("ggplot2")
+library("rjson")
+library("ggplot2")
+source("code/JSON_handler.R")
+source("code/plotter.R")
+de_habit_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-02-24&limit=1000")
+de_base_json <- fromJSON(file = "http://hedonometer.org/api/v1/happiness/?format=json&timeseries__title=de_all&date__gte=2022-01-24&limit=31")
+data_de_habit <- function.createHedonDataFrame(de_habit_json)
+data_de_base <- function.createHedonDataFrame(de_base_json)
+#creating a plot for the german language
+plot_de_habit <- function.basic_plot(data_de_habit)
+plot_de_base <- function.basic_plot(data_de_base)
